@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#user {
+  background-color: blueviolet;
+  color: white;
+}
+
+@media screen and (min-width: 769px) {
+  aside {
+    display: none !important;
+  }
+  .md\:d-none {
+    display: none;
+  }
+  #menu span,
+  .books-user span {
+    display: block !important;
+  }
+  .footer2 {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+  }
+  .footer2-subcontainer span:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .footer2-subcontainer span:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .undo span {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .redo span {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .footer2-subcontainer3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .help-btn button {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: auto;
+    padding: 0;
+    outline: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  sub {
+    display: none;
+  }
+  nav {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 80px;
+  }
+  #menu span {
+    display: none !important;
+  }
+  #toolbar {
+    overflow-x: scroll;
+    padding: 0.3rem 0.1rem;
+    padding: 0;
+    margin: auto;
+  }
+  .Library-txt {
+    display: none;
+  }
+  .icon-container {
+    width: auto;
+    height: 25px;
+    padding: 0;
+  }
+  aside {
+    position: absolute;
+    top: 28%;
+    right: -2%;
+    width: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid gray;
+  }
+  .footer1 {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+  }
+  .footer2 {
+    display: none !important;
+  }
+}
